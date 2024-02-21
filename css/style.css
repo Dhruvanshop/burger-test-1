@@ -1,0 +1,258 @@
+/* universal styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+/* body styling */
+body {
+  background-image: linear-gradient(
+    to right,
+    #e8ebfc,
+    #edeffc,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #edeffc,
+    #e8ebfc
+  );
+}
+/* anchor tag styling */
+a {
+  text-decoration: none;
+}
+/* container */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+/* li styling */
+li {
+  list-style: none;
+}
+header nav,
+header nav div ul {
+  display: flex;
+  align-items: center;
+}
+/* nav bar styling */
+header nav {
+  justify-content: space-between;
+  margin: 20px 0;
+}
+/* logo img style */
+header nav .left-nav ul li img {
+  margin-right: 26px;
+}
+/* left nav styling */
+header nav .left-nav ul li a {
+  display: inline-block;
+  padding: 16px 0;
+  margin-left: 60px;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+}
+/* left nav styling on hover */
+header nav .left-nav ul li a:hover {
+  border-bottom: 3px solid #5142c1;
+}
+/* right nav styling */
+header nav .right-nav ul li a {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-left: 40px;
+  font-weight: 500;
+  color: #000;
+}
+/* telephone icon styling */
+header nav ul li a i {
+  margin-right: 10px;
+  font-size: 12px;
+}
+/* call-us link styling */
+header nav .right-nav ul .call-btn {
+  margin: 0;
+  border-radius: 22px;
+  background-color: #feeded;
+  color: #ff6347;
+}
+/* profile */
+header nav .right-nav ul li .nav-img {
+  padding: 0;
+}
+
+/* banner styling */
+.banner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+/* banner immediate div styling */
+.banner > div {
+  width: 33%;
+}
+/* banner heading styling */
+.banner .content h1 {
+  font-size: 64px;
+  line-height: 68px;
+  color: #222939;
+}
+/* banner para styling */
+.banner .content p {
+  margin-top: 45px;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* burger image styling */
+.banner-img {
+  position: relative;
+  background-image: url("/images/icons/bg.svg");
+  background-size: cover;
+  padding-top: 80px;
+  padding-right: 20px;
+  background-position: center top;
+}
+/* ketchup image styling */
+.ketchup-img {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
+/* Summary styles */
+.summary {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.summary h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #222939;
+}
+.summary hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    #f7f6fb,
+    #f9f8fc,
+    #fbfbfd,
+    #fdfdfe,
+    #ffffff
+  ); /* Set background gradient */
+}
+/* setting display flex to bill,features and its immedieate div */
+.summary .bill,
+.summary .features,
+.summary .features > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .bill styling */
+.summary .bill {
+  margin: 20px 0;
+}
+.summary .bill h3 {
+  color: #5343c3;
+  font-size: 36px;
+}
+.summary .bill a {
+  background-color: #5343c3;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 14px 52px;
+  font-size: 18px;
+}
+/* feature styling */
+.summary .features {
+  padding: 16px 20px;
+  border-radius: 28px;
+  background-color: #f5f5ff;
+  margin-bottom: 30px;
+}
+.summary .features img {
+  margin-right: 12px;
+}
+.summary > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.summary p a {
+  color: #ff6347;
+}
+
+/* ingredients styling */
+.ingredients {
+  margin-top: 130px;
+  background-color: #5142c1;
+  height: 180px;
+}
+.ingredient-content {
+  position: relative;
+}
+/* topings of burger styling */
+.ingredients .toppings {
+  top: -130px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+/* div of toppings img */
+.topping-img {
+  margin-top: 16px;
+  height: 40px;
+  width: 120px;
+}
+/* image of toppings */
+.ingredients .toppings img {
+  height: auto;
+  width: 100%;
+}
+/* card section styling */
+.toppings .card {
+  padding: 26px 22px;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 10px;
+}
+/* inner p tag of card */
+.toppings .card > p {
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* inner div of card */
+.toppings .card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* counter button */
+.toppings .card .count button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  color: #5142c1;
+  font-size: 20px;
+}
+/* counter text  */
+.toppings .card .count p {
+  font-size: 20px;
+  font-weight: 500;
+}
